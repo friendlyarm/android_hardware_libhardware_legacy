@@ -3004,7 +3004,7 @@ float AudioPolicyManagerBase::computeVolume(int stream,
     // if volume is not 0 (not muted), force media volume to max on digital output
     if (stream == AudioSystem::MUSIC &&
         index != mStreams[stream].mIndexMin &&
-        (device == AUDIO_DEVICE_OUT_AUX_DIGITAL ||
+        (//device == AUDIO_DEVICE_OUT_AUX_DIGITAL ||
          device == AUDIO_DEVICE_OUT_DGTL_DOCK_HEADSET ||
          device == AUDIO_DEVICE_OUT_USB_ACCESSORY ||
          device == AUDIO_DEVICE_OUT_USB_DEVICE)) {
